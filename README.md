@@ -156,4 +156,3 @@ Sasidharan B
 - Thanks to Azure Cognitive Services for Speech-to-Text capabilities
 - Thanks to OpenAI for GPT-3.5 Turbo sentiment analysis
 - Built with Flask and Python
-```
