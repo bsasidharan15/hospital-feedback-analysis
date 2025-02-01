@@ -1,42 +1,42 @@
 # 🏥 Hospital Feedback Analysis System 💬
 
-An AI-powered system for analyzing customer feedback sentiments using Azure Speech-to-Text and OpenAI GPT-3.5 Turbo.
+An AI-powered system for analyzing customer feedback sentiments using 🤖 Azure Speech-to-Text and OpenAI GPT-3.5 Turbo.
 
-## Features
+## 🌟 Features
 
-- 🎙️ Batch audio transcription (Tamil language support)
-- 🤖 AI-powered sentiment analysis
-- 📦 JSON input/output format
-- 🌐 RESTful API endpoints
-- 🚀 Memory-efficient batch processing
-- 📊 Sentiment visualization and insights
-- 🔄 Automatic conversion between audio and text
+- 🎙️ **Batch audio transcription** (Tamil language support)
+- 🤖 **AI-powered sentiment analysis**
+- 📦 **JSON input/output format**
+- 🌐 **RESTful API endpoints**
+- 🚀 **Memory-efficient batch processing**
+- 📊 **Sentiment visualization and insights**
+- 🔄 **Automatic conversion between audio and text**
 
-## Installation
+## 📥 Installation
 
 ```bash
-# Clone the repository
+# 🔽 Clone the repository
 git clone https://github.com/yourusername/HospitalFeedbackAnalysis.git
 
-# Navigate to the project directory
+# 📂 Navigate to the project directory
 cd HospitalFeedbackAnalysis
 
-# Install required dependencies
+# 📦 Install required dependencies
 pip install -r requirements.txt
 ```
 
-## Dependencies
+## 🛠️ Dependencies
 
-- Python 3.7+
-- Flask
-- Azure Cognitive Services Speech SDK
-- OpenAI API
-- python-dotenv
-- requests
+- 🐍 **Python 3.7+**
+- 🏗️ **Flask**
+- 🎤 **Azure Cognitive Services Speech SDK**
+- 🧠 **OpenAI API**
+- 🔑 **python-dotenv**
+- 🌐 **requests**
 
-## Usage
+## 🚀 Usage
 
-### Basic Usage
+### ▶️ Basic Usage
 
 1. Start the Flask server:
    ```bash
@@ -50,7 +50,7 @@ pip install -r requirements.txt
      -d '{"audio_url": "https://example.com/feedback.wav"}'
    ```
 
-### Example Response
+### 📩 Example Response
 
 ```json
 {
@@ -62,20 +62,20 @@ pip install -r requirements.txt
 }
 ```
 
-## API Reference
+## 📌 API Reference
 
-### POST `/api/analyze`
+### 🔹 POST `/api/analyze`
 
 Analyzes customer feedback from an audio file.
 
-#### Request Body
+#### 📤 Request Body
 ```json
 {
   "audio_url": "string (URL to the audio file)"
 }
 ```
 
-#### Response
+#### 📥 Response
 ```json
 {
   "transcription": "string (Transcribed text)",
@@ -86,9 +86,9 @@ Analyzes customer feedback from an audio file.
 }
 ```
 
-## Examples
+## 📝 Examples
 
-### Analyzing Feedback
+### 🎧 Analyzing Feedback
 
 ```python
 import requests
@@ -102,7 +102,7 @@ response = requests.post(url, json=payload)
 print(response.json())
 ```
 
-### Batch Processing
+### 🔄 Batch Processing
 
 For batch processing, you can loop through multiple audio URLs and send requests to the API.
 
@@ -118,14 +118,14 @@ for url in audio_urls:
     print(response.json())
 ```
 
-## Configuration
+## ⚙️ Configuration
 
 1. Create a `.env` file in the root directory:
    ```bash
    cp config/.env.example .env
    ```
 
-2. Add your Azure and OpenAI credentials:
+2. Add your **Azure** and **OpenAI** credentials:
    ```
    AZURE_SPEECH_KEY=your_azure_speech_key
    AZURE_SPEECH_REGION=your_azure_region
@@ -134,24 +134,24 @@ for url in audio_urls:
    AZURE_OPENAI_DEPLOYMENT_NAME=your_deployment_name
    ```
 
-## Contributing
+## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. 🍴 Fork the repository
+2. 🌱 Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. 📝 Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. 📤 Push to the branch (`git push origin feature/AmazingFeature`)
+5. 🔄 Open a Pull Request
 
-## License
+## 📜 License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LICENSE) file for details.
 
-## Author
+## 👨‍💻 Author
 
-Sasidharan B
+**Sasidharan B**
 
-## Acknowledgments
+## 🙌 Acknowledgments
 
-- Thanks to Azure Cognitive Services for Speech-to-Text capabilities
-- Thanks to OpenAI for GPT-3.5 Turbo sentiment analysis
-- Built with Flask and Python
+- 🎤 Thanks to **Azure Cognitive Services** for Speech-to-Text capabilities
+- 🤖 Thanks to **OpenAI** for GPT-3.5 Turbo sentiment analysis
+- 🏗️ Built with **Flask** and **Python**
